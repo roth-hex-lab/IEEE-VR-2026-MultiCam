@@ -17,7 +17,7 @@ To overcome these limitations, we propose a constant dynamic camera pose estimat
 <p align="center">
  <img src="asset/teaser_proposal.png">
     <br> 
-    <em>GBOT presentation</em>
+    <em>IEEE VR presentation</em>
 </p>
 </a>
 
