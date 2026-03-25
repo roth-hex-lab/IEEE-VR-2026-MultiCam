@@ -15,7 +15,7 @@ To overcome these limitations, we propose a constant dynamic camera pose estimat
 
 <a href="https://www.youtube.com/watch?v=O-o3Y0Mzrw4">
 <p align="center">
- <img src="asset/teaser_proposal.png">
+ <img src="asset/arch.pdf">
     <br> 
     <em>IEEE VR presentation</em>
 </p>
