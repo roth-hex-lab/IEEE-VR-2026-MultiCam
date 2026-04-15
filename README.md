@@ -1,5 +1,7 @@
 # MultiCam: On-the-fly Multi-Camera Pose Estimation Using Spatiotemporal Overlaps of Known Objects
 <div align="center">
+    <a href="https://ieeexplore.ieee.org/document/11458691" target="_blank">
+    <img src="https://img.shields.io/badge/ieee-%2300629B.svg?&style=for-the-badge&logo=ieee&logoColor=white"></a>
     <a href="https://arxiv.org/abs/2603.22839" target="_blank">
     <img src="https://img.shields.io/badge/arxiv-%23B31B1B.svg?&style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper arXiv"></a>
 </div>
