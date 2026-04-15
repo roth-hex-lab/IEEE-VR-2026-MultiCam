@@ -1,0 +1,16 @@
+/*
+/*/
+*.asv
+doc/html
+data/
+build/
+!/include/
+!/src/
+!/third_party/
+!/test/
+!/examples/
+!/doc/
+!.gitignore
+!CMakeLists.txt
+!readme.md
+!.clang-format
