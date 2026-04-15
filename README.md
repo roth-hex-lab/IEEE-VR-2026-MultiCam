@@ -23,4 +23,74 @@ Multi-camera dynamic Augmented Reality (AR) applications require a camera pose e
 </a>
 
 ## Usage
-We provide a codebase of retrieving live streams from multiple cameras, including Azure Kinect, Realsense, Hololens
+We provide a codebase for retrieving live streams from multiple cameras, including Azure Kinect, Realsense, Hololens
+
+- test Hololens live stream
+  ```
+  examples/test_hololens.cpp
+  ```
+- for kinect,  just change the type in
+  ```
+    int cam_id = 0;
+    auto color_camera_ptr{
+      std::make_shared<m3t::AzureKinectColorMulti>(cam_id, "azure_kinect_color")};
+    auto depth_camera_ptr{std::make_shared<m3t::AzureKinectDepthMulti>(
+        cam_id, "azure_kinect_depth" + std::to_string(cam_id))};
+  ```
+- for real sense camera,  just change the type in
+  ```
+    auto color_camera_ptr{
+        std::make_shared<m3t::RealSenseColorCamera>("real_sense_color")};
+    auto depth_camera_ptr{
+        std::make_shared<m3t::RealSenseDepthCamera>("real_sense_depth")};
+  ```
+## Our MultiCam data
+comming soon
+
+## Pretrained checkpoints and config files
+comming soon
+
+## Dataset Evaluation
+Evaluation multi-view setup on YCB-Video dataset:
+```
+project evaluate_ycb_dataset_multiview
+examples/evaluate_ycb_dataset_multiview.cpp
+examples/evaluate_ycb_evaluator_multiview.cpp
+```
+
+Evaluation multi-view setup on T-less dataset:
+```
+project evaluate_tless_dataset_multiview
+examples/evaluate_tless_dataset_multiview.cpp
+examples/evaluate_tless_evaluator_multiview.cpp
+```
+
+Evaluation multi-view setup on our MultiCam dataset:
+```
+project evaluate_scenertm6d_dataset_multiview
+examples/evaluate_scenertm6d_dataset_multiview.cpp
+examples/evaluate_scenertm6d_evaluator_multiview.cpp
+```
+
+## Demo
+The code in `examples/demo.cpp` contains file for real-time demo.
+
+## Acknowledgement
+
+Our codes are partially based on previoys works. We sincerely thank [CosyPose](https://github.com/yannlabb/cosypose), [hl2ss](https://github.com/jdibenes/hl2ss), [m3t](https://github.com/DLR-RM/3DObjectTracking/tree/master/M3T) , [mmdeploy](https://github.com/open-mmlab/mmdeploy) for providing their wonderful code to the community!
+
+## Citations
+If you find MultiCam is useful in your research or applications, please consider giving us a star 🌟 and citing it.
+
+```bibtex
+@inproceedings{li2026multicam,
+  title={MultiCam: On-the-fly Multi-Camera Pose Estimation Using Spatiotemporal Overlaps of Known Objects},
+  author={Li, Shiyu and Schieber, Hannah and Waldow, Kristoffer and Busam, Benjamin and Kreimeier, Julian and Roth, Daniel},
+  journal={IEEE transactions on visualization and computer graphics},
+  year={2026},
+  publisher={IEEE}
+}
+```
+
+## Licence
+GBOT is under the MIT Licence and is supported for commercial usage. If you need a commercial license for GBOT, please feel free to contact us.
