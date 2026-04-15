@@ -93,4 +93,5 @@ If you find MultiCam is useful in your research or applications, please consider
 ```
 
 ## Licence
-GBOT is under the MIT Licence and is supported for commercial usage. If you need a commercial license for GBOT, please feel free to contact us.
+Permission to use, copy, modify and distribute this software and its documentation for educational, research and non-profit purposes only. 
+Any modification based on this work must be open-source and prohibited for commercial use.  If you need a commercial license, please feel free to contact daniel.roth@tum.de.
