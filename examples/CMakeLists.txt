@@ -33,6 +33,9 @@ target_link_libraries(evaluate_scenertm6d_dataset_multiview PUBLIC m3t PRIVATE m
 
 
 if (USE_HOLOLENS)
+    add_executable(test_hololens test_hololens.cpp)
+    target_link_libraries(test_hololens PUBLIC m3t avcodec avformat avutil swresample swscale swscale avfilter)
+
     add_executable(demo demo.cpp cosypose.hpp)
     target_link_libraries(demo PUBLIC m3t avcodec avformat avutil swresample swscale swscale avfilter PRIVATE mmdeploy ${Pangolin_LIBRARIES} "${TORCH_LIBRARIES}")
     if (MSVC)
