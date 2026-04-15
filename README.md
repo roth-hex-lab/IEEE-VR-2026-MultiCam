@@ -44,7 +44,7 @@ We provide a codebase for retrieving live streams from multiple cameras, includi
     auto depth_camera_ptr{
         std::make_shared<m3t::RealSenseDepthCamera>("real_sense_depth")};
   ```
-## Our MultiCam data
+## Our MultiCam dataset
 comming soon
 
 ## Pretrained checkpoints and config files
