@@ -22,5 +22,5 @@ Multi-camera dynamic Augmented Reality (AR) applications require a camera pose e
 </p>
 </a>
 
-## Code and dataset
-Code and dataset will be published before April 15th, 2026
+## Usage
+We provide a codebase of retrieving live streams from multiple cameras, including Azure Kinect, Realsense, Hololens
